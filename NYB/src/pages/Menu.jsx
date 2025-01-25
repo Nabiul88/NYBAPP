@@ -1,3 +1,4 @@
+// src/pages/Menu.jsx
 import coverImg from "../assets/menu/banner3.jpg";
 import dessertImg from "../assets/menu/dessert-bg.jpg";
 import pizzaImg from "../assets/menu/pizza-bg.jpg";
@@ -5,7 +6,7 @@ import saladImg from "../assets/menu/salad-bg.jpg";
 import soupImg from "../assets/menu/soup-bg.jpg";
 import SectionTitle from "../components/SectionTitle";
 import MenuCategory from "../components/MenuCategory";
-import useMenu from "../Hooks/useMenu";
+import useMenu from "../Hooks/useMenu";  // This is the correct import
 import Cover from "../components/Cover";
 
 const Menu = () => {
@@ -24,31 +25,31 @@ const Menu = () => {
         heading={"TODAY'S OFFER"}
       ></SectionTitle>
 
-      {/* offered items  */}
+      {/* offered items */}
       <MenuCategory items={offered} title={'offered'}></MenuCategory>
 
-      {/* Deserts items  */}
+      {/* Deserts items */}
       <MenuCategory
         items={dessert}
         title={"desserts"}
         coverImg={dessertImg}
       ></MenuCategory>
 
-      {/* pizza items  */}
+      {/* pizza items */}
       <MenuCategory
         items={pizza}
         title={"pizza"}
         coverImg={pizzaImg}
       ></MenuCategory>
 
-      {/* salad items  */}
+      {/* salad items */}
       <MenuCategory
         items={salad}
         title={"salad"}
         coverImg={saladImg}
       ></MenuCategory>
 
-      {/* soup items  */}
+      {/* soup items */}
       <MenuCategory
         items={soup}
         title={"soup"}
